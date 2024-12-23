@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working with Vyomr, Inc. as a Software Engineer
+🔭 As a dedicated Software Engineer at Vyomr, Inc., I am actively enhancing my skills by pursuing a BSc in Data Science and Applications at IIT Madras. 
 
 🌱 I’m currently learning REST API, MongoDb and Data Science
 
