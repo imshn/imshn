@@ -18,7 +18,7 @@
 <!-- [![Instagram](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png)](https://instagram.com/__i.am.shaan__)  -->
 <h2 align="left">🌐 Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/imshn" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="imshn" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/iamshn" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="imshn" height="30" width="40" /></a>
 <a href="https://instagram.com/__i.am.shaan_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/refs/heads/master/src/images/icons/Social/instagram.svg" alt="imshn" height="30" width="40" /></a>
 </p>
 <!-- </p>
