@@ -83,7 +83,7 @@ const Navbar = () => {
           className="text-xl font-bold flex items-center"
         >
           <div className="relative">
-            <span className="text-shimmer">Shaan.dev</span>
+            <span className="text-shimmer">Shaan</span>
           </div>
         </Link>
 

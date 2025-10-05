@@ -52,7 +52,7 @@ const About = () => {
               <div className="relative">
                 <div className="aspect-square rounded-xl overflow-hidden glass-card">
                   <img 
-                    src="/lovable-uploads/336ddc1f-79a9-49fe-86bf-260124f36ab5.png" 
+                    src="/portfolio.png" 
                     alt="Profile" 
                     className="w-full h-full object-cover object-center"
                     style={{ 
@@ -66,7 +66,7 @@ const About = () => {
                 {/* Floating elements */}
                 <div className="absolute top-10 -right-10 glass-card p-4 rounded-lg animate-float [animation-delay:0.5s]">
                   <div className="text-sm font-medium">IIT Madras</div>
-                  <div className="text-xs text-black/50">BSc in Data Science</div>
+                  <div className="text-xs text-black/50">BS in Data Science</div>
                 </div>
                 
                 <div className="absolute -bottom-6 -left-6 glass-card p-4 rounded-lg animate-float [animation-delay:0.2s]">
@@ -87,7 +87,7 @@ const About = () => {
                 </div>
                 
                 <p className="text-lg text-muted-foreground animate-on-scroll" style={{ animationDelay: '0.6s' }}>
-                  I'm a 19-year-old software developer and data science enthusiast currently pursuing my Bachelor's degree in Data Science and Applications at the prestigious Indian Institute of Technology Madras.
+                  I'm a young software developer and data science enthusiast currently pursuing my Bachelor's degree in Data Science and Applications at the prestigious Indian Institute of Technology Madras.
                 </p>
                 
                 <p className="text-lg text-muted-foreground animate-on-scroll" style={{ animationDelay: '0.8s' }}>
@@ -95,15 +95,15 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg text-muted-foreground animate-on-scroll" style={{ animationDelay: '1s' }}>
-                  When I'm not coding or analyzing data, you might find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through my blog.
+                  When I'm not coding or analyzing data, you might find me exploring new technologies, playing cricket or video games, or sharing my knowledge through my blog.
                 </p>
                 
                 <div className="pt-4 animate-on-scroll" style={{ animationDelay: '1.2s' }}>
                   <h3 className="text-xl font-semibold mb-3">Education</h3>
                   <div className="glass-card p-4 rounded-lg">
-                    <div className="font-medium">BSc in Data Science and Applications</div>
+                    <div className="font-medium">BS in Data Science and Applications</div>
                     <div className="text-muted-foreground">Indian Institute of Technology Madras</div>
-                    <div className="text-sm text-muted-foreground">2022 - Present</div>
+                    <div className="text-sm text-muted-foreground">2025 - 2028</div>
                   </div>
                 </div>
               </div>

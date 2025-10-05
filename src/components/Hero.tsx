@@ -92,7 +92,7 @@ const Hero = () => {
           
           <div className="mt-12 flex items-center justify-center gap-6 animate-fade-in opacity-0" style={{animationDelay: '0.9s', animationFillMode: 'forwards'}}>
             <a 
-              href="https://github.com" 
+              href="http://github.com/imshn" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-full glass-card hover:scale-110 transition-transform duration-300"
@@ -101,7 +101,7 @@ const Hero = () => {
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/iamshn/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-full glass-card hover:scale-110 transition-transform duration-300"
@@ -110,7 +110,7 @@ const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="mailto:contact@example.com"
+              href="mailto:shahnawaz28april@gmail.com"
               className="p-2 rounded-full glass-card hover:scale-110 transition-transform duration-300"
               aria-label="Email"
             >
