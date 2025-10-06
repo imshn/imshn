@@ -91,7 +91,7 @@ const About = () => {
                 </p>
                 
                 <p className="text-lg text-muted-foreground animate-on-scroll" style={{ animationDelay: '0.8s' }}>
-                  My journey in technology began with a fascination for solving complex problems and creating elegant solutions. I'm passionate about the intersection of software development and data science, where I can leverage both coding skills and analytical thinking to build meaningful applications.
+                  My journey in technology began with a fascination for solving complex problems and creating real world products that stands out (I love building products that solve real world problems and that excites me). I'm passionate about the intersection of software development and data science, where I can leverage both coding skills and analytical thinking to build meaningful applications.
                 </p>
                 
                 <p className="text-lg text-muted-foreground animate-on-scroll" style={{ animationDelay: '1s' }}>
