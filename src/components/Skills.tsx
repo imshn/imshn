@@ -16,22 +16,22 @@ const skillCategories = [
   {
     name: "Backend Development",
     icon: <Server className="h-6 w-6" />,
-    skills: ["Node.js", "Express.js", "REST APIs", "Django", "Flask"]
+    skills: ["Node.js", "Express.js", "REST APIs", "Django", "Flask", "FastAPI"]
   },
   {
     name: "Database",
     icon: <Database className="h-6 w-6" />,
-    skills: ["MySQL", "MongoDB", "SQL", "Database Design"]
+    skills: ["MySQL", "MongoDB", "Database Design"]
   },
   {
     name: "Data Science",
     icon: <AreaChart className="h-6 w-6" />,
-    skills: ["Data Analysis", "Power BI", "Statistical Analysis"]
+    skills: ["Data Analysis", "Power BI"]
   },
   {
     name: "AI/ML",
     icon: <BrainCircuit className="h-6 w-6" />,
-    skills: ["Modern AI Tools", "Machine Learning", "Data Visualization", "LLMs", "Many more"]
+    skills: ["Modern AI Tools", "Machine Learning", "N8n: workflow automation"]
   }
 ];
 
