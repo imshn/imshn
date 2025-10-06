@@ -143,7 +143,7 @@ const Projects = () => {
         <div className="absolute -top-20 left-0 w-96 h-96 rounded-full bg-blue-500/5 filter blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-purple-500/5 filter blur-3xl"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-on-scroll">
@@ -152,15 +152,16 @@ const Projects = () => {
             </h2>
             <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <strong>Note: <br /> Currently I am working on this sections and projects that would be added here.</strong> <br />
               Explore my portfolio of projects spanning web development, data science, and more.
               Each project reflects my passion for creating efficient, elegant solutions.
             </p>
           </div>
-          
-          {/* Filter buttons */}
+
+          {/* Filter buttons
           <div className="flex flex-wrap justify-center gap-3 mb-12 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
             {categories.map((category) => (
-              <Button 
+              <Button
                 key={category.id}
                 variant={activeFilter === category.id ? "default" : "outline"}
                 className={cn(
@@ -174,11 +175,11 @@ const Projects = () => {
               </Button>
             ))}
           </div>
-          
-          {/* Projects grid */}
+
+          {/* Projects grid 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project, index) => (
-              <div 
+              <div
                 key={project.id}
                 className={cn(
                   "glass-card rounded-xl overflow-hidden transition-all duration-500 hover:shadow-xl",
@@ -187,42 +188,42 @@ const Projects = () => {
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
                 <div className="relative overflow-hidden aspect-video">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
+                  <img
+                    src={project.image}
+                    alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />
                 </div>
-                
+
                 <div className="p-6">
                   <div className="flex flex-wrap gap-2 mb-3">
                     {project.tags.map((tag) => (
-                      <span 
-                        key={tag} 
+                      <span
+                        key={tag}
                         className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  
+
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  
+
                   <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
-                  
+
                   <div className="flex items-center gap-3">
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
+                    <a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-full bg-secondary/50 hover:bg-secondary transition-colors"
                       aria-label="GitHub Repository"
                     >
                       <Github className="h-4 w-4" />
                     </a>
-                    <a 
-                      href={project.demo} 
-                      target="_blank" 
+                    <a
+                      href={project.demo}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-1 text-sm font-medium text-primary hover:underline"
                     >
@@ -233,13 +234,17 @@ const Projects = () => {
                 </div>
               </div>
             ))}
-          </div>
-          
+          </div> */}
+
           {/* Show more button */}
-          <div className="mt-12 text-center animate-on-scroll" style={{ animationDelay: '0.6s' }}>
-            <Button variant="outline" className="glass-card hover:bg-secondary/50">
-              View More Projects
-            </Button>
+          <div className="mt-12 text-center w-full flex justify-center animate-on-scroll" style={{ animationDelay: '0.6s' }}>
+            <a href='https://github.com/imshn' target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm font-medium text-primary hover:underline">
+              <Button variant="outline" className="glass-card hover:bg-secondary/50">
+                View My Projects
+                <ExternalLink className="h-3 w-3" />
+              </Button>
+            </a>
+
           </div>
         </div>
       </div>

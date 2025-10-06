@@ -35,10 +35,10 @@ const Footer = () => {
             {/* Logo and about */}
             <div className="md:col-span-1">
               <Link to="/" className="text-xl font-bold inline-block mb-4">
-                <span className="text-shimmer">Shaan.dev</span>
+                <span className="text-shimmer">Shaan</span>
               </Link>
               <p className="text-muted-foreground mb-4">
-                Software developer and data science student based in Chennai, India.
+                Software developer and data science student based in India.
                 Passionate about creating elegant, efficient digital solutions.
               </p>
             </div>
@@ -85,7 +85,7 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
               <ul className="space-y-2">
                 <li className="text-muted-foreground">
-                  IIT Madras, Chennai, India
+                  313001 Udaipur, Rajasthan, India
                 </li>
                 <li>
                   <a href="mailto:shahnawaz28april@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
