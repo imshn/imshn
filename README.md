@@ -43,7 +43,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://linkedin.com/in/iamshn)  
 [![Kaggle](https://img.shields.io/badge/Kaggle-blue?logo=kaggle&logoColor=white)](https://kaggle.com/iamshaan20)  
-[![Portfolio](https://img.shields.io/badge/Portfolio-black?logo=vercel&logoColor=white)](https://imshn.github.io)  
+[![Portfolio](https://img.shields.io/badge/Portfolio-black?logo=vercel&logoColor=white)](https://imshn.vercel.app/)  
 [![Email](https://img.shields.io/badge/Email-grey?logo=gmail&logoColor=white)](mailto:shahnawaz28april@gmail.com)
 
 ---
