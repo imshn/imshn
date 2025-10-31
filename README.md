@@ -1,69 +1,51 @@
-# Welcome to your Lovable project
+# 👋 Hey, I'm Shaan!
 
-## Project info
+💡 A 20-year-old Software Engineer & Data Science student at **IIT Madras BS Degree Program**.  
+⚙️ Currently working full-time at **Nestor**, building real-world solutions in **React, Next.js, Python, and ML**.  
+🚀 Passionate about **Data Science, Machine Learning, and AI-driven products** — I’m on a mission to master every layer of the ML stack by the end of 2026.
 
-**URL**: https://lovable.dev/projects/5bc480a3-32f2-4c71-a41f-a4acfb081329
+---
 
-## How can I edit this code?
+## 🔥 About Me
 
-There are several ways of editing your application.
+- 🧠 I think in code and data — love turning problems into products.
+- 📊 Currently building **1 ML project every week** (learning + building sprint till Dec 2025).
+- 🩺 Life warrior — kidney transplant survivor (2017) who never backed down.
+- ⚡ I believe in hard work, faith, and long-term vision.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5bc480a3-32f2-4c71-a41f-a4acfb081329) and start prompting.
+## 🧰 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+**Languages:**  
+`Python` | `JavaScript` | `TypeScript` | `SQL` | `Rust`
 
-**Use your preferred IDE**
+**Frameworks & Tools:**  
+`React` | `Next.js` | `Node.js` | `Flask` | `FastAPI` | `Streamlit` | `Express` 
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Machine Learning & Data Science:**  
+`NumPy` | `Pandas` | `Matplotlib` | `Seaborn` | `Scikit-learn` | `TensorFlow` | `Keras` | `XGBoost`
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Other:**  
+`Git` | `GitHub Actions` | `VS Code` | `Power BI` | `Tableau`
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧩 Current Focus (Nov–Dec 2025)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- ⚙️ Mastering **Data Science & ML fundamentals**
+- 🤖 Building 8 real-world ML projects in 8 weeks
+- ☁️ Learning **model deployment with Flask, Streamlit, and Docker**
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📫 Let's Connect
 
-**Edit a file directly in GitHub**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://linkedin.com/in/iamshn)  
+[![Kaggle](https://img.shields.io/badge/Kaggle-blue?logo=kaggle&logoColor=white)](https://kaggle.com/iamshaan20)  
+[![Portfolio](https://img.shields.io/badge/Portfolio-black?logo=vercel&logoColor=white)](https://imshn.github.io)  
+[![Email](https://img.shields.io/badge/Email-grey?logo=gmail&logoColor=white)](mailto:shahnawaz28april@gmail.com)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5bc480a3-32f2-4c71-a41f-a4acfb081329) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+⭐ *"Keep learning, keep building — consistency beats talent every time."*
