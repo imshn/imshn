@@ -27,15 +27,15 @@
 `NumPy` | `Pandas` | `Matplotlib` | `Seaborn` | `Scikit-learn` | `TensorFlow` | `Keras` | `XGBoost`
 
 **Other:**  
-`Git` | `GitHub Actions` | `VS Code` | `Power BI` | `Tableau`
+`Git` | `GitHub Actions` | `Antigravity` | `Power BI` | `Tableau`
 
 ---
 
-## 🧩 Current Focus (Nov–Dec 2025)
+## 🧩 Current Focus (Jan–Dec 2025)
 
 - ⚙️ Mastering **Data Science & ML fundamentals**
-- 🤖 Building 8 real-world ML projects in 8 weeks
-- ☁️ Learning **model deployment with Flask, Streamlit, and Docker**
+- 🤖 Building real-world SAAS/AI/ML projects through the year
+- ☁️ Learning **model deployment with Flask, FastAPI, and Docker**
 
 ---
 
