@@ -8,64 +8,14 @@ import { cn } from '@/lib/utils';
 const projects = [
   {
     id: 1,
-    title: "Data Visualization Dashboard",
-    description: "Interactive dashboard for visualizing complex datasets using React and D3.js",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
-    tags: ["React", "D3.js", "Data Visualization"],
-    category: "data",
-    github: "#",
-    demo: "#"
-  },
-  {
-    id: 2,
-    title: "Personal Blog Platform",
-    description: "A full-stack blog platform with a custom CMS built with Next.js and Node.js",
-    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070",
-    tags: ["Next.js", "Node.js", "MongoDB"],
+    title: "Professional Crypto Portfolio Tracker with Targeted Tax-Lot Accounting",
+    description: "A high-performance, full-stack cryptocurrency portfolio management system designed for traders who require precision beyond basic balance tracking. Unlike standard trackers, this application implements Tax-Lot Accounting (FIFO & Targeted Selling), allowing users to track the specific cost basis and realized P&L of individual trades.",
+    image: "https://www.upwork.com/att/download/portfolio/persons/uid/1337322672734584832/profile/projects/files/0acca8aa-3282-453e-8fd7-c3b5f7c75ef5",
+    tags: ["Next.js", "Python", "FastAPI", "API Integration", "CoinGecko API", "PostgreSQL"],
     category: "web",
-    github: "#",
-    demo: "#"
+    github: "https://github.com/imshn/multi_portfolio_crypto_tracker",
+    demo: "https://github.com/imshn/multi_portfolio_crypto_tracker"
   },
-  {
-    id: 3,
-    title: "E-commerce API",
-    description: "RESTful API for e-commerce applications with authentication and payment processing",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070",
-    tags: ["Express.js", "REST API", "MongoDB"],
-    category: "backend",
-    github: "#",
-    demo: "#"
-  },
-  {
-    id: 4,
-    title: "Machine Learning Model for Stock Prediction",
-    description: "Predictive model for stock market trends using Python and scikit-learn",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070",
-    tags: ["Python", "Machine Learning", "Data Analysis"],
-    category: "data",
-    github: "#",
-    demo: "#"
-  },
-  {
-    id: 5,
-    title: "Task Management Application",
-    description: "A React-based application for managing daily tasks and projects",
-    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072",
-    tags: ["React", "Redux", "Firebase"],
-    category: "web",
-    github: "#",
-    demo: "#"
-  },
-  {
-    id: 6,
-    title: "Weather Forecast App",
-    description: "Real-time weather forecasting app using external APIs and geolocation",
-    image: "https://images.unsplash.com/photo-1527482797697-8795b05a13fe?q=80&w=2070",
-    tags: ["JavaScript", "APIs", "Geolocation"],
-    category: "web",
-    github: "#",
-    demo: "#"
-  }
 ];
 
 // Filter categories
@@ -151,14 +101,14 @@ const Projects = () => {
               My Projects
             </h2>
             <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            {/* <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               <strong>Note: <br /> Currently I am working on this sections and projects that would be added here.</strong> <br />
               Explore my portfolio of projects spanning web development, data science, and more.
               Each project reflects my passion for creating efficient, elegant solutions.
-            </p>
+            </p> */}
           </div>
 
-          {/* Filter buttons
+          {/* Filter buttons */}
           <div className="flex flex-wrap justify-center gap-3 mb-12 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
             {categories.map((category) => (
               <Button
@@ -176,7 +126,7 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Projects grid 
+          {/* Projects grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project, index) => (
               <div
@@ -234,7 +184,7 @@ const Projects = () => {
                 </div>
               </div>
             ))}
-          </div> */}
+          </div>
 
           {/* Show more button */}
           <div className="mt-12 text-center w-full flex justify-center animate-on-scroll" style={{ animationDelay: '0.6s' }}>
