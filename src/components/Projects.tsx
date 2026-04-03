@@ -11,10 +11,10 @@ const projects = [
     title: "Professional Crypto Portfolio Tracker with Targeted Tax-Lot Accounting",
     description: "A high-performance, full-stack cryptocurrency portfolio management system designed for traders who require precision beyond basic balance tracking. Unlike standard trackers, this application implements Tax-Lot Accounting (FIFO & Targeted Selling), allowing users to track the specific cost basis and realized P&L of individual trades.",
     image: "https://www.upwork.com/att/download/portfolio/persons/uid/1337322672734584832/profile/projects/files/0acca8aa-3282-453e-8fd7-c3b5f7c75ef5",
-    tags: ["Next.js", "Python", "FastAPI", "API Integration", "CoinGecko API", "PostgreSQL"],
+    tags: ["Next.js", "Python", "FastAPI", "API Integration", "CoinGecko API", "Turso"],
     category: "web",
-    github: "https://github.com/imshn/multi_portfolio_crypto_tracker",
-    demo: "https://github.com/imshn/multi_portfolio_crypto_tracker"
+    github: "https://github.com/IHVERSE/crypt_frontend",
+    demo: "https://multicryptoportfolio.vercel.app/"
   },
 ];
 
