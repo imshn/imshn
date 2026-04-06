@@ -1,5 +1,7 @@
 
-import { Link } from 'react-router-dom';
+'use client';
+
+import Link from 'next/link';
 import { ArrowUp } from 'lucide-react';
 
 const Footer = () => {
@@ -34,12 +36,12 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
             {/* Logo and about */}
             <div className="md:col-span-1">
-              <Link to="/" className="text-xl font-bold inline-block mb-4">
+              <Link href="/" className="text-xl font-bold inline-block mb-4">
                 <span className="text-shimmer">Shaan</span>
               </Link>
               <p className="text-muted-foreground mb-4">
-                Software developer and data science student based in India.
-                Passionate about creating elegant, efficient digital solutions.
+                SaaS development partner for founders and startups.
+                From MVP development to scalable backend optimization.
               </p>
             </div>
 
@@ -48,32 +50,32 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#about" className="text-muted-foreground hover:text-primary transition-colors">
-                    About
+                    <Link href="/#about" className="text-muted-foreground hover:text-primary transition-colors">
+                    Who I Help
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#skills" className="text-muted-foreground hover:text-primary transition-colors">
-                    Skills
+                    <Link href="/#skills" className="text-muted-foreground hover:text-primary transition-colors">
+                    Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#projects" className="text-muted-foreground hover:text-primary transition-colors">
-                    Projects
+                    <Link href="/#projects" className="text-muted-foreground hover:text-primary transition-colors">
+                    Process & Proof
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
                     Blog
                   </Link>
                 </li>
                 <li>
-                  <Link to="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href="/#contact" className="text-muted-foreground hover:text-primary transition-colors">
                     Contact
                   </Link>
                 </li>

@@ -1,6 +1,6 @@
 
 import { useState, useRef, useEffect } from 'react';
-import { Send, Mail, MapPin, Phone } from 'lucide-react';
+import { Send, Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -24,18 +24,21 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
+
+    const subject = encodeURIComponent(`SaaS project inquiry from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nProject Details:\n${formData.message}`
+    );
+
+    window.location.href = `mailto:shahnawaz28april@gmail.com?subject=${subject}&body=${body}`;
+
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+    setFormData({ name: '', email: '', message: '' });
+
     setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
-    }, 1500);
+      setIsSubmitted(false);
+    }, 5000);
   };
 
   // Intersection Observer for animation
@@ -81,12 +84,12 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
-              Get In Touch
+              Let&apos;s Build Your SaaS Product The Right Way
             </h2>
             <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind or want to discuss a collaboration opportunity?
-              Feel free to reach out, and I'll get back to you as soon as possible.
+              Tell me what you are building, where you are blocked, and what timeline you are targeting.
+              I will share a practical roadmap you can execute.
             </p>
           </div>
           
@@ -157,11 +160,21 @@ const Contact = () => {
                       <>Message Sent Successfully!</>
                     ) : (
                       <>
-                        <span>Send Message</span>
+                        <span>Book a Free SaaS Strategy Call</span>
                         <Send className="h-4 w-4" />
                       </>
                     )}
                   </Button>
+
+                  <a
+                    href="https://wa.me/919602035868?text=Hi%20Shahnawaz%2C%20I%20want%20to%20build%20a%20SaaS%20product."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-lg border border-border bg-green-600 text-white hover:bg-green-700 transition-colors"
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                    <span>Chat on WhatsApp</span>
+                  </a>
                 </div>
               </form>
             </div>
@@ -205,6 +218,23 @@ const Contact = () => {
                         <h4 className="font-medium mb-1">Phone</h4>
                         <a href="tel:+919602035868" className="text-muted-foreground hover:text-primary transition-colors">
                           +91 9602035868
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 rounded-full bg-green-600/15 text-green-600 mt-1">
+                        <MessageCircle className="h-5 w-5" />
+                      </div>
+                      <div>
+                        <h4 className="font-medium mb-1">WhatsApp</h4>
+                        <a
+                          href="https://wa.me/919602035868?text=Hi%20Shahnawaz%2C%20I%20want%20to%20discuss%20my%20SaaS%20MVP."
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          Message on WhatsApp
                         </a>
                       </div>
                     </div>
@@ -257,6 +287,17 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <a
+        href="https://wa.me/919602035868?text=Hi%20Shahnawaz%2C%20I%20want%20to%20build%20a%20SaaS%20product."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 rounded-full bg-green-600 text-white px-4 py-3 shadow-lg hover:bg-green-700 transition-colors"
+        aria-label="Chat on WhatsApp"
+      >
+        <MessageCircle className="h-4 w-4" />
+        <span className="text-sm font-medium">WhatsApp</span>
+      </a>
     </section>
   );
 };

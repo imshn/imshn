@@ -1,20 +1,23 @@
 
+'use client';
+
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   // Navigation links
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/#about' },
-    { name: 'Skills', href: '/#skills' },
-    { name: 'Projects', href: '/#projects' },
+    { name: 'Who I Help', href: '/#about' },
+    { name: 'Services', href: '/#skills' },
+    { name: 'Process & Proof', href: '/#projects' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/#contact' },
   ];
@@ -22,10 +25,10 @@ const Navbar = () => {
   // Check if current path matches link path
   const isActive = (path: string) => {
     if (path.includes('#')) {
-      const [basePath, hash] = path.split('#');
-      return location.pathname === basePath && location.hash === `#${hash}`;
+      const [basePath] = path.split('#');
+      return pathname === basePath;
     }
-    return location.pathname === path;
+    return pathname === path;
   };
 
   // Handle scroll event to change navbar style
@@ -45,7 +48,7 @@ const Navbar = () => {
   // Close mobile menu when changing routes
   useEffect(() => {
     setIsMobileMenuOpen(false);
-  }, [location]);
+  }, [pathname]);
 
   // Handle smooth scrolling for anchor links
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -54,15 +57,14 @@ const Navbar = () => {
       const [basePath, hash] = href.split('#');
       
       // Only handle if we're on the same base path
-      if (location.pathname === basePath || (basePath === '/' && location.pathname === '/')) {
+      if (pathname === basePath || (basePath === '/' && pathname === '/')) {
         const element = document.getElementById(hash);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
           window.history.pushState(null, '', href);
         }
       } else {
-        // Navigate to the page first, then we'll scroll on load
-        window.location.href = href;
+        window.location.assign(href);
       }
     }
   };
@@ -79,7 +81,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link 
-          to="/" 
+          href="/"
           className="text-xl font-bold flex items-center"
         >
           <div className="relative">
@@ -92,7 +94,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <Link
               key={link.name}
-              to={link.href}
+                href={link.href}
               onClick={(e) => handleAnchorClick(e, link.href)}
               className={cn(
                 "nav-link",
@@ -129,7 +131,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <Link
               key={link.name}
-              to={link.href}
+                href={link.href}
               onClick={(e) => handleAnchorClick(e, link.href)}
               className={cn(
                 "text-lg font-medium transition-colors hover:text-primary",

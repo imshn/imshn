@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -75,13 +75,13 @@ const BlogCard = ({ post, className, featured = false, style }: BlogCardProps) =
           "font-semibold mb-2 hover:text-primary transition-colors",
           featured ? "text-2xl" : "text-xl"
         )}>
-          <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+          <Link href={`/blog/${post.slug}`}>{post.title}</Link>
         </h3>
         
         <p className="text-muted-foreground mb-4 text-sm line-clamp-3">{post.excerpt}</p>
         
         <Link 
-          to={`/blog/${post.slug}`}
+          href={`/blog/${post.slug}`}
           className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:gap-2 transition-all"
         >
           <span>Read Article</span>

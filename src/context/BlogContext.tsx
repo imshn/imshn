@@ -1,4 +1,6 @@
 
+'use client';
+
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 // Blog post type
@@ -22,6 +24,8 @@ interface BlogContextType {
   updatePost: (id: string, updatedPost: BlogPost) => void;
   deletePost: (id: string) => void;
 }
+
+export type { BlogPost };
 
 // Sample blog posts data
 const initialBlogPosts: BlogPost[] = [
@@ -69,6 +73,10 @@ const BlogContext = createContext<BlogContextType | undefined>(undefined);
 // Provider component
 export const BlogProvider = ({ children }: { children: ReactNode }) => {
   const [blogPosts, setBlogPosts] = useState<BlogPost[]>(() => {
+    if (typeof window === 'undefined') {
+      return initialBlogPosts;
+    }
+
     // Load from localStorage if available
     const savedPosts = localStorage.getItem('blogPosts');
     return savedPosts ? JSON.parse(savedPosts) : initialBlogPosts;
@@ -76,7 +84,9 @@ export const BlogProvider = ({ children }: { children: ReactNode }) => {
 
   // Save to localStorage whenever posts change
   useEffect(() => {
-    localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('blogPosts', JSON.stringify(blogPosts));
+    }
   }, [blogPosts]);
 
   // Add a new post

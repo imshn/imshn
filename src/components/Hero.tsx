@@ -57,7 +57,7 @@ const Hero = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="mb-6 inline-block">
             <span className="px-3 py-1 text-sm font-medium rounded-full bg-primary/10 text-primary backdrop-blur-sm">
-              Software Developer & Data Science Student
+              Fullstack Developer for SaaS Founders
             </span>
           </div>
           
@@ -65,7 +65,7 @@ const Hero = () => {
             ref={headingRef} 
             className="text-4xl md:text-6xl font-bold leading-tight mb-6"
           >
-            {'Hi, I\'m Mohammed Shahnawaz'.split('').map((char, index) => (
+            {'SaaS Development to Build Your Product Faster'.split('').map((char, index) => (
               <span key={index} className="char opacity-0 word-break animate-fade-in" style={{animationFillMode: 'forwards'}}>
                 {char === ' ' ? '\u00A0' : char}
               </span>
@@ -74,21 +74,30 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl text-muted-foreground mb-8 animate-fade-in opacity-0" style={{animationDelay: '0.5s', animationFillMode: 'forwards'}}>
-            Building elegant software solutions and exploring data science at IIT Madras. 
-            Passionate about creating meaningful digital experiences that solve real problems.
+            I help SaaS founders and early-stage startups launch MVPs quickly, ship reliable fullstack features,
+            and scale backend systems that handle growth without breaking.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0" style={{animationDelay: '0.7s', animationFillMode: 'forwards'}}>
-            <Button className="glass-card bg-primary/90 hover:bg-primary text-white flex items-center gap-2 transition-all duration-300 px-6 py-6">
-              <span>View My Work</span>
-              <ArrowRight className="h-4 w-4" />
+            <Button asChild className="glass-card bg-primary/90 hover:bg-primary text-white flex items-center gap-2 transition-all duration-300 px-6 py-6">
+              <a href="#contact">
+                <span>Book a Free SaaS Strategy Call</span>
+                <ArrowRight className="h-4 w-4" />
+              </a>
             </Button>
-            
-            <Button variant="outline" className="glass-card hover:bg-secondary/50 flex items-center gap-2 transition-all duration-300 px-6 py-6">
-              <span>Download CV</span>
-              <Download className="h-4 w-4" />
+
+            <Button asChild variant="outline" className="glass-card hover:bg-secondary/50 flex items-center gap-2 transition-all duration-300 px-6 py-6">
+              <a href="#projects">
+                <span>See SaaS Case Studies</span>
+                <Download className="h-4 w-4" />
+              </a>
             </Button>
           </div>
+
+          <p className="text-sm text-muted-foreground mt-5 animate-fade-in opacity-0" style={{animationDelay: '0.8s', animationFillMode: 'forwards'}}>
+            Need to build SaaS product from scratch? I cover SaaS MVP development, scalable backend development,
+            and end-to-end product delivery.
+          </p>
           
           <div className="mt-12 flex items-center justify-center gap-6 animate-fade-in opacity-0" style={{animationDelay: '0.9s', animationFillMode: 'forwards'}}>
             <a 

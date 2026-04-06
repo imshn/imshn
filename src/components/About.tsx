@@ -53,7 +53,7 @@ const About = () => {
                 <div className="aspect-square rounded-xl overflow-hidden glass-card">
                   <img 
                     src="/portfolio.png" 
-                    alt="Profile" 
+                    alt="Fullstack SaaS developer helping startups build and scale products" 
                     className="w-full h-full object-cover object-center"
                     style={{ 
                       imageRendering: 'crisp-edges',
@@ -81,29 +81,31 @@ const About = () => {
               <div className="space-y-6">
                 <div className="animate-on-scroll" style={{ animationDelay: '0.4s' }}>
                   <h2 className="text-3xl md:text-4xl font-bold mb-2">
-                    About Me
+                    Who I Help
                   </h2>
                   <div className="h-1 w-20 bg-primary rounded-full mb-6"></div>
                 </div>
                 
                 <p className="text-lg text-muted-foreground animate-on-scroll" style={{ animationDelay: '0.6s' }}>
-                  I'm a young software developer and data science enthusiast currently pursuing my Bachelor's degree in Data Science and Applications at the prestigious Indian Institute of Technology Madras.
+                  I work with SaaS founders, early-stage startups, and product builders who want to launch fast without sacrificing code quality.
                 </p>
                 
                 <p className="text-lg text-muted-foreground animate-on-scroll" style={{ animationDelay: '0.8s' }}>
-                  My journey in technology began with a fascination for solving complex problems and creating real world products that stands out (I love building products that solve real world problems and that excites me). I'm passionate about the intersection of software development and data science, where I can leverage both coding skills and analytical thinking to build meaningful applications.
+                  As a fullstack developer for startups, I help teams move from idea to working product with clear milestones,
+                  fast execution, and scalable architecture decisions from day one.
                 </p>
                 
                 <p className="text-lg text-muted-foreground animate-on-scroll" style={{ animationDelay: '1s' }}>
-                  When I'm not coding or analyzing data, you might find me exploring new technologies, playing cricket or video games, or sharing my knowledge through my blog.
+                  If you need MVP development for startups, reliable API integrations, or scalable backend development,
+                  I bring both product thinking and engineering depth to deliver outcomes.
                 </p>
                 
                 <div className="pt-4 animate-on-scroll" style={{ animationDelay: '1.2s' }}>
-                  <h3 className="text-xl font-semibold mb-3">Education</h3>
+                  <h3 className="text-xl font-semibold mb-3">Ideal Clients</h3>
                   <div className="glass-card p-4 rounded-lg">
-                    <div className="font-medium">BS in Data Science and Applications</div>
-                    <div className="text-muted-foreground">Indian Institute of Technology Madras</div>
-                    <div className="text-sm text-muted-foreground">2025 - 2028</div>
+                    <div className="font-medium">SaaS founders and product-led teams</div>
+                    <div className="text-muted-foreground">Early-stage startups building a new SaaS product</div>
+                    <div className="text-sm text-muted-foreground">Teams that need fast MVP to scaling support</div>
                   </div>
                 </div>
               </div>

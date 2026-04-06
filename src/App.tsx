@@ -6,11 +6,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { BlogProvider } from "@/context/BlogContext";
-import Index from "./pages/Index";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import Dashboard from "./pages/Dashboard";
-import NotFound from "./pages/NotFound";
+import Index from "./views/Index";
+import Blog from "./views/Blog";
+import BlogPost from "./views/BlogPost";
+import Dashboard from "./views/Dashboard";
+import NotFound from "./views/NotFound";
 
 const queryClient = new QueryClient();
 

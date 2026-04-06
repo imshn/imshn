@@ -8,14 +8,34 @@ import { cn } from '@/lib/utils';
 const projects = [
   {
     id: 1,
-    title: "Professional Crypto Portfolio Tracker with Targeted Tax-Lot Accounting",
-    description: "A high-performance, full-stack cryptocurrency portfolio management system designed for traders who require precision beyond basic balance tracking. Unlike standard trackers, this application implements Tax-Lot Accounting (FIFO & Targeted Selling), allowing users to track the specific cost basis and realized P&L of individual trades.",
+    title: "SaaS Analytics MVP for Multi-Source Data",
+    description: "Built an MVP with auth, billing-ready architecture, dashboard analytics, and API integrations to help a startup validate product-market fit quickly.",
     image: "https://www.upwork.com/att/download/portfolio/persons/uid/1337322672734584832/profile/projects/files/0acca8aa-3282-453e-8fd7-c3b5f7c75ef5",
-    tags: ["Next.js", "Python", "FastAPI", "API Integration", "CoinGecko API", "Turso"],
+    tags: ["SaaS MVP development", "Next.js", "Node.js", "PostgreSQL", "REST API"],
     category: "web",
-    // github: "https://github.com/IHVERSE/crypt_frontend",
+    github: "https://github.com/imshn",
     demo: "https://multicryptoportfolio.vercel.app/"
   },
+  {
+    id: 2,
+    title: "Backend Modernization for Growing SaaS",
+    description: "Refactored backend modules, optimized database access paths, and improved API reliability to support higher usage with lower latency.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    tags: ["scalable backend development", "API optimization", "Caching", "Monitoring"],
+    category: "backend",
+    github: "https://github.com/imshn",
+    demo: "https://github.com/imshn"
+  },
+  {
+    id: 3,
+    title: "Founder Dashboard & Internal Tools",
+    description: "Delivered fullstack internal tools with role-based access and workflow automation so product teams could ship and operate faster.",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+    tags: ["fullstack developer for startups", "React", "APIs", "RBAC"],
+    category: "web",
+    github: "https://github.com/imshn",
+    demo: "https://github.com/imshn"
+  }
 ];
 
 // Filter categories
@@ -98,15 +118,56 @@ const Projects = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
-              My Projects
+              Process and Proof
             </h2>
             <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
-            {/* <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              <strong>Note: <br /> Currently I am working on this sections and projects that would be added here.</strong> <br />
-              Explore my portfolio of projects spanning web development, data science, and more.
-              Each project reflects my passion for creating efficient, elegant solutions.
-            </p> */}
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              I follow a practical path from idea to MVP to scaling, then validate outcomes with measurable product and engineering results.
+            </p>
           </div>
+
+          <div id="process" className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14 animate-on-scroll" style={{ animationDelay: '0.15s' }}>
+            {[
+              {
+                title: '1. Idea Validation',
+                description: 'Define core user flow, map scope, and prioritize features that can validate the business quickly.'
+              },
+              {
+                title: '2. MVP Development',
+                description: 'Build the product fast with clean fullstack architecture, APIs, and launch-ready deployment setup.'
+              },
+              {
+                title: '3. Scale and Optimize',
+                description: 'Improve performance, reliability, and backend scalability based on real usage and product feedback.'
+              }
+            ].map((step) => (
+              <div key={step.title} className="glass-card p-6 rounded-xl">
+                <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
+                <p className="text-muted-foreground">{step.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div id="proof" className="mb-12 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
+            <div className="glass-card rounded-xl p-6 md:p-8">
+              <h3 className="text-2xl font-semibold mb-6 text-center">Proof of Execution</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {[
+                  { metric: '40% faster', label: 'API response time after backend optimization' },
+                  { metric: '99.9% uptime', label: 'for deployed production services and APIs' },
+                  { metric: '2-6 weeks', label: 'to launch focused MVPs for startup validation' },
+                  { metric: '10+ integrations', label: 'delivered across third-party product ecosystems' }
+                ].map((item) => (
+                  <div key={item.metric} className="rounded-lg border border-border p-4 bg-background/40">
+                    <div className="text-2xl font-bold mb-1">{item.metric}</div>
+                    <p className="text-sm text-muted-foreground">{item.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-semibold text-center mb-8">Selected Work</h3>
 
           {/* Filter buttons */}
           <div className="flex flex-wrap justify-center gap-3 mb-12 animate-on-scroll" style={{ animationDelay: '0.2s' }}>
@@ -140,7 +201,7 @@ const Projects = () => {
                 <div className="relative overflow-hidden aspect-video">
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} - SaaS development project preview`}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                   />
                 </div>

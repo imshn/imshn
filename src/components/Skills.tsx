@@ -1,37 +1,61 @@
 
 import { useEffect, useRef } from 'react';
-import { Database, FileCode, Server, AreaChart, BrainCircuit, Globe } from 'lucide-react';
+import { Rocket, Layers, Server, Gauge, Workflow, ShieldCheck } from 'lucide-react';
 
 const skillCategories = [
   {
-    name: "Programming Languages",
-    icon: <FileCode className="h-6 w-6" />,
-    skills: ["Python", "JavaScript", "TypeScript", "SQL"]
+    name: "SaaS MVP Development",
+    icon: <Rocket className="h-6 w-6" />,
+    skills: [
+      "MVP development for startups with clear scope",
+      "Rapid prototyping and production-ready implementation",
+      "Fast launch with clean architecture for future growth"
+    ]
   },
   {
-    name: "Web Development",
-    icon: <Globe className="h-6 w-6" />,
-    skills: ["React.js", "Next.js", "HTML/CSS", "Tailwind CSS"]
+    name: "Fullstack SaaS Development",
+    icon: <Layers className="h-6 w-6" />,
+    skills: [
+      "Frontend, backend, database, and API development",
+      "Fullstack developer for startups who need one technical owner",
+      "Build SaaS product features with reliable delivery cadence"
+    ]
   },
   {
-    name: "Backend Development",
+    name: "Backend Scaling & Optimization",
     icon: <Server className="h-6 w-6" />,
-    skills: ["Node.js", "Express.js", "REST APIs", "Django", "Flask", "FastAPI"]
+    skills: [
+      "Scalable backend development for growing user traffic",
+      "Performance tuning, caching, and database optimization",
+      "Stable APIs and infrastructure readiness for scale"
+    ]
   },
   {
-    name: "Database",
-    icon: <Database className="h-6 w-6" />,
-    skills: ["MySQL", "MongoDB", "Database Design"]
+    name: "Product Iteration",
+    icon: <Workflow className="h-6 w-6" />,
+    skills: [
+      "Sprint-based feature shipping",
+      "Feedback-led iterations after launch",
+      "Roadmap support from v1 to v2"
+    ]
   },
   {
-    name: "Data Science",
-    icon: <AreaChart className="h-6 w-6" />,
-    skills: ["Data Analysis", "Power BI"]
+    name: "Performance Engineering",
+    icon: <Gauge className="h-6 w-6" />,
+    skills: [
+      "API response optimization",
+      "Database query and indexing improvements",
+      "Monitoring critical backend paths"
+    ]
   },
   {
-    name: "AI/ML",
-    icon: <BrainCircuit className="h-6 w-6" />,
-    skills: ["Modern AI Tools", "Machine Learning", "N8n: workflow automation"]
+    name: "Reliability & Security",
+    icon: <ShieldCheck className="h-6 w-6" />,
+    skills: [
+      "Robust authentication and authorization",
+      "Safer deployments and rollback-aware releases",
+      "Error handling and resilience for core flows"
+    ]
   }
 ];
 
@@ -81,12 +105,11 @@ const Skills = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-on-scroll">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
-              My Skills
+              Services
             </h2>
             <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              I've developed a diverse skill set spanning web development, data science, 
-              and modern AI technologies. Here's what I bring to the table:
+              End-to-end SaaS development services focused on one outcome: shipping faster and scaling with confidence.
             </p>
           </div>
           
@@ -118,18 +141,18 @@ const Skills = () => {
           
           {/* Additional technical skills */}
           <div className="mt-16 animate-on-scroll" style={{ animationDelay: '0.6s' }}>
-            <h3 className="text-2xl font-semibold text-center mb-8">Technical Proficiency</h3>
+            <h3 className="text-2xl font-semibold text-center mb-8">Core Delivery Stack</h3>
             <div className="glass-card rounded-xl p-6">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  { name: "Python", level: 90 },
-                  { name: "JavaScript", level: 85 },
-                  { name: "React.js", level: 80 },
-                  { name: "Next.js", level: 75 },
-                  { name: "Node.js", level: 75 },
-                  { name: "SQL", level: 85 },
-                  { name: "REST APIs", level: 80 },
-                  { name: "AI Tools", level: 70 }
+                  { name: "TypeScript", level: 90 },
+                  { name: "React", level: 88 },
+                  { name: "Node.js", level: 86 },
+                  { name: "Next.js", level: 82 },
+                  { name: "API Design", level: 87 },
+                  { name: "SQL", level: 84 },
+                  { name: "Cloud Deployments", level: 80 },
+                  { name: "System Design", level: 83 }
                 ].map((skill) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
