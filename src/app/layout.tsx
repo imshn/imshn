@@ -3,8 +3,10 @@ import Script from 'next/script';
 import './globals.css';
 import Providers from './providers';
 
+const siteUrl = 'https://imshn.vercel.app';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://imshn.dev'),
+  metadataBase: new URL(siteUrl),
   title: 'SaaS Development for Startups | Mohammed Shahnawaz',
   description:
     'SaaS MVP and fullstack development for startups. Build fast, scale reliably, and launch with confidence.',
@@ -38,6 +40,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'x7X_3UeYU9912nqoI'
+  },
+  other: {
+    'msvalidate.01': '9B9FBB5C88DED97B631F30B0C81E3248'
   }
 };
 

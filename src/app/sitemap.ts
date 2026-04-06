@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://imshn.dev';
+  const baseUrl = 'https://imshn.vercel.app';
   const blogSlugs = [
     'understanding-data-visualization-techniques',
     'building-full-stack-application-nextjs-node',
