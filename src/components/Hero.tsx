@@ -4,21 +4,7 @@ import { ArrowRight, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
-  const headingRef = useRef<HTMLHeadingElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-
-  // Text animation effect
-  useEffect(() => {
-    const chars = headingRef.current?.querySelectorAll('.char');
-    if (chars) {
-      chars.forEach((char, i) => {
-        const el = char as HTMLElement;
-        el.style.animationDelay = `${i * 0.05}s`;
-        // Make sure characters remain visible after animation
-        el.style.animationFillMode = 'forwards';
-      });
-    }
-  }, []);
 
   // Parallax effect on mouse move
   useEffect(() => {
@@ -61,15 +47,8 @@ const Hero = () => {
             </span>
           </div>
           
-          <h1 
-            ref={headingRef} 
-            className="text-4xl md:text-6xl font-bold leading-tight mb-6"
-          >
-            {'SaaS Development to Build Your Product Faster'.split('').map((char, index) => (
-              <span key={index} className="char opacity-0 word-break animate-fade-in" style={{animationFillMode: 'forwards'}}>
-                {char === ' ' ? '\u00A0' : char}
-              </span>
-            ))}
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 text-balance break-words">
+            SaaS Development to Build Your Product Faster
             <div className="h-1.5 w-12 bg-primary rounded-full mx-auto mt-2"></div>
           </h1>
           

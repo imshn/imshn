@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils';
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentHash, setCurrentHash] = useState('');
   const pathname = usePathname();
 
   // Navigation links
@@ -18,18 +19,26 @@ const Navbar = () => {
     { name: 'Who I Help', href: '/#about' },
     { name: 'Services', href: '/#skills' },
     { name: 'Process & Proof', href: '/#projects' },
-    { name: 'Blog', href: '/blog' },
+    // { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/#contact' },
   ];
 
   // Check if current path matches link path
   const isActive = (path: string) => {
     if (path.includes('#')) {
-      const [basePath] = path.split('#');
-      return pathname === basePath;
+      const [basePath, hash] = path.split('#');
+      return pathname === basePath && currentHash === `#${hash}`;
     }
-    return pathname === path;
+    return path === '/' ? pathname === '/' && !currentHash : pathname === path;
   };
+
+  useEffect(() => {
+    const syncHash = () => setCurrentHash(window.location.hash || '');
+    syncHash();
+    window.addEventListener('hashchange', syncHash);
+
+    return () => window.removeEventListener('hashchange', syncHash);
+  }, [pathname]);
 
   // Handle scroll event to change navbar style
   useEffect(() => {
@@ -62,6 +71,7 @@ const Navbar = () => {
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
           window.history.pushState(null, '', href);
+          setCurrentHash(`#${hash}`);
         }
       } else {
         window.location.assign(href);

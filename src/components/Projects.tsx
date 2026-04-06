@@ -16,26 +16,26 @@ const projects = [
     github: "https://github.com/imshn",
     demo: "https://multicryptoportfolio.vercel.app/"
   },
-  {
-    id: 2,
-    title: "Backend Modernization for Growing SaaS",
-    description: "Refactored backend modules, optimized database access paths, and improved API reliability to support higher usage with lower latency.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-    tags: ["scalable backend development", "API optimization", "Caching", "Monitoring"],
-    category: "backend",
-    github: "https://github.com/imshn",
-    demo: "https://github.com/imshn"
-  },
-  {
-    id: 3,
-    title: "Founder Dashboard & Internal Tools",
-    description: "Delivered fullstack internal tools with role-based access and workflow automation so product teams could ship and operate faster.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
-    tags: ["fullstack developer for startups", "React", "APIs", "RBAC"],
-    category: "web",
-    github: "https://github.com/imshn",
-    demo: "https://github.com/imshn"
-  }
+  // {
+  //   id: 2,
+  //   title: "Backend Modernization for Growing SaaS",
+  //   description: "Refactored backend modules, optimized database access paths, and improved API reliability to support higher usage with lower latency.",
+  //   image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+  //   tags: ["scalable backend development", "API optimization", "Caching", "Monitoring"],
+  //   category: "backend",
+  //   github: "https://github.com/imshn",
+  //   demo: "https://github.com/imshn"
+  // },
+  // {
+  //   id: 3,
+  //   title: "Founder Dashboard & Internal Tools",
+  //   description: "Delivered fullstack internal tools with role-based access and workflow automation so product teams could ship and operate faster.",
+  //   image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+  //   tags: ["fullstack developer for startups", "React", "APIs", "RBAC"],
+  //   category: "web",
+  //   github: "https://github.com/imshn",
+  //   demo: "https://github.com/imshn"
+  // }
 ];
 
 // Filter categories
@@ -43,7 +43,7 @@ const categories = [
   { id: "all", label: "All Projects" },
   { id: "web", label: "Web Development" },
   { id: "backend", label: "Backend" },
-  { id: "data", label: "Data Science" }
+  // { id: "data", label: "Data Science" }
 ];
 
 const Projects = () => {
