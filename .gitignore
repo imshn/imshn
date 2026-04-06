@@ -17,6 +17,7 @@ build
 coverage
 .cache
 *.tsbuildinfo
+.vercel
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -27,4 +28,3 @@ coverage
 *.njsproj
 *.sln
 *.sw?
-.next
