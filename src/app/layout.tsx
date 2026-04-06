@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     'startup product development'
   ],
   alternates: {
-    canonical: '/saas-development'
+    canonical: '/'
   },
   openGraph: {
     title: 'SaaS Development for Startups',
     description:
       'Build your SaaS product faster with MVP development, fullstack engineering, and scalable backend systems.',
-    url: '/saas-development',
+    url: '/',
     siteName: 'Mohammed Shahnawaz',
     images: [{ url: '/portfolio.png' }],
     type: 'website'

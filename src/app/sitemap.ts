@@ -2,6 +2,11 @@ import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://imshn.dev';
+  const blogSlugs = [
+    'understanding-data-visualization-techniques',
+    'building-full-stack-application-nextjs-node',
+    'introduction-machine-learning-beginners'
+  ];
 
   return [
     {
@@ -16,11 +21,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8
     },
-    {
-      url: `${baseUrl}/dashboard`,
+    ...blogSlugs.map((slug) => ({
+      url: `${baseUrl}/blog/${slug}`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.4
-    }
+      changeFrequency: 'monthly' as const,
+      priority: 0.7
+    }))
   ];
 }

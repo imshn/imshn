@@ -3,7 +3,7 @@
   "/robots.txt/route": "/robots.txt",
   "/sitemap.xml/route": "/sitemap.xml",
   "/page": "/",
-  "/blog/page": "/blog",
   "/blog/[slug]/page": "/blog/[slug]",
+  "/blog/page": "/blog",
   "/dashboard/page": "/dashboard"
 }
