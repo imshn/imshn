@@ -1,16 +1,15 @@
 # 👋 Hey, I'm Shaan!
 
-💡 A 20-year-old Software Engineer & Data Science student at **IIT Madras BS Degree Program**.  
+💡 Young Software Engineer & Data Science student at **IIT Madras BS Degree Program**.  
 ⚙️ Currently working full-time at **Nestor**, building real-world solutions in **React, Next.js, Python, and ML**.  
-🚀 Passionate about **Data Science, Machine Learning, and AI-driven products** — I’m on a mission to master every layer of the ML stack by the end of 2026.
+🚀 Passionate about **Data Science, Machine Learning, and AI-driven products**.
 
 ---
 
 ## 🔥 About Me
 
 - 🧠 I think in code and data — love turning problems into products.
-- 📊 Currently building **1 ML project every week** (learning + building sprint till Dec 2025).
-- 🩺 Life warrior — kidney transplant survivor (2017) who never backed down.
+- 📊 Currently Learning **Business, Engineering, AI, Mathematics behind AI**.
 - ⚡ I believe in hard work, faith, and long-term vision.
 
 ---
@@ -31,11 +30,11 @@
 
 ---
 
-## 🧩 Current Focus (Jan–Dec 2025)
+## 🧩 Current Focus 
 
 - ⚙️ Mastering **Data Science & ML fundamentals**
 - 🤖 Building real-world SAAS/AI/ML projects through the year
-- ☁️ Learning **model deployment with Flask, FastAPI, and Docker**
+- ☁️ Learning **model deployment with Flask, FastAPI, and Docker, Engineering and Maths behind AI**
 
 ---
 
