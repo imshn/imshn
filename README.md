@@ -25,7 +25,7 @@
 **Machine Learning & Data Science:**  
 `NumPy` | `Pandas` | `Matplotlib` | `Seaborn` | `Scikit-learn` | `TensorFlow` | `Keras` | `XGBoost`
 
-**Core**
+**Core:**
 `Mathematics` | `Statistics`
 
 **Other:**  
