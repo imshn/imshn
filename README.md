@@ -25,8 +25,11 @@
 **Machine Learning & Data Science:**  
 `NumPy` | `Pandas` | `Matplotlib` | `Seaborn` | `Scikit-learn` | `TensorFlow` | `Keras` | `XGBoost`
 
+**Core**
+`Mathematics` | `Statistics`
+
 **Other:**  
-`Git` | `GitHub Actions` | `Antigravity` | `Power BI` | `Tableau`
+`Git` | `GitHub Actions` | `Claude Code` | `Power BI` | `Playwright`
 
 ---
 
